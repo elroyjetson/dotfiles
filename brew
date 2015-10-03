@@ -1,7 +1,17 @@
+#!/usr/bin/env bash
+
 # modified from https://github.com/mathiasbynens/dotfiles
+
+# install homebrew if it isn't already installed
+which -s brew
+if [[ $? != 0 ]] ; then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew update
 brew upgrade
+
+brew install git
 
 # Install Bash 4
 brew install bash
@@ -9,7 +19,6 @@ brew install bash-completion2
 
 brew install rbenv ruby-build
 
-brew install git
 brew install closure-compiler
 brew install mp3splt
 brew install node
