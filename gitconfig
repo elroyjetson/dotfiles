@@ -1,0 +1,11 @@
+[user]
+	name = James King
+	email = elroy@elroyjetson.org
+[core]
+	excludesfile = /Users/jking/.gitignore_global
+	quotepath = false
+	editor = vi
+[color]
+	ui = true
+[push]
+	default = simple

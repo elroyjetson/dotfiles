@@ -1,0 +1,20 @@
+# modified from https://github.com/mathiasbynens/dotfiles
+
+brew update
+brew upgrade
+
+# Install Bash 4
+brew install bash
+brew install bash-completion2
+
+brew install git
+brew install closure-compiler
+brew install mp3splt
+brew install node
+brew install s3cmd
+brew install wget --enable-iri
+brew install yuicompressor
+brew install imagemagick --with-webp
+brew install exiftool
+
+brew cleanup

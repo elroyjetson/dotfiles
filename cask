@@ -1,0 +1,24 @@
+# modified from https://github.com/mathiasbynens/dotfiles
+
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+    brew cask install "${@}" 2> /dev/null
+}
+
+installcask google-chrome
+installcask firefox
+installcask sequel-pro
+installcask transmit
+installcask imageoptim
+installcask vlc
+installcask dropbox
+installcask alfred
+installcask caffeine
+installcask evernote
+installcask handbrake
+installcask pandoc
+# quicklook plugin for markdown files
+installcask qlmarkdown
+installcask lastpass
