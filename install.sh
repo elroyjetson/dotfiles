@@ -17,9 +17,11 @@ fi
 # link files
 
 ln -s $DOTFILES/bash_profile $HOME/.bash_profile
+ln -s $DOTFILES/bashrc $HOME/.bashrc
 ln -s $DOTFILES/bash_aliases $HOME/.bash_aliases
 ln -s $DOTFILES/bash_prompt $HOME/.bash_prompt
 ln -s $DOTFILES/vimrc $HOME/.vimrc
 ln -s $DOTFILES/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/gitignore_global $HOME/.gitignore_global
 ln -s $DOTFILES/tmux.conf $HOME/.tmux.conf
+ln -s $DOTFILES/inputrc $HOME/.inputrc

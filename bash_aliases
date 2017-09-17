@@ -30,3 +30,15 @@ alias ...="cd ../.."
 # Shortcuts
 alias src="cd /Volumes/src"
 alias cole="cd /Volumes/src/cole"
+
+alias imgdim="sips -g pixelWidth -g pixelHeight"
+
+# cordova
+alias cb="cordova build"
+alias cr="cordova run android"
+
+# Capture android screen capture - with one device connected
+alias asp='/Users/jking/bin/capture_android_screenshot.sh'
+
+# get screen shot of a web site
+alias wsp="webkit2png --ignore-ssl-check"
