@@ -18,8 +18,9 @@ brew install bash
 brew install bash-completion2
 
 brew install rbenv ruby-build
-
-brew install closure-compiler
+brew install python3
+# requires java to install properly
+#brew install closure-compiler
 brew install mp3splt
 brew install node
 brew install s3cmd
@@ -27,5 +28,6 @@ brew install wget --enable-iri
 brew install yuicompressor
 brew install imagemagick --with-webp
 brew install exiftool
+brew install youtube-dl
 
 brew cleanup
