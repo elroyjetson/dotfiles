@@ -29,5 +29,6 @@ brew install yuicompressor
 brew install imagemagick --with-webp
 brew install exiftool
 brew install youtube-dl
+brew install tmux
 
 brew cleanup

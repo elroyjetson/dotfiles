@@ -25,3 +25,6 @@ ln -s $DOTFILES/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/gitignore_global $HOME/.gitignore_global
 ln -s $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES/inputrc $HOME/.inputrc
+
+# Install brew cask apps
+$DOTFILES/cask
