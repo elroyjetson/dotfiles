@@ -5,9 +5,9 @@ prompt_command () {
 	else
 		ERRPROMPT='->($?) '
 	fi
-	if [ "\$(type -t __git_ps1)" ]; then # if we're in a Git repo, show current branch
-		BRANCH="\$(__git_ps1 '[ %s ] ')"
-	fi
+#	if [ "\$(type -t __git_ps1)" ]; then # if we're in a Git repo, show current branch
+#		BRANCH="\$(__git_ps1 '[ %s ] ')"
+#	fi
 	local TIME=`fmt_time` # format time for prompt string
 	local GREEN="\[\033[0;32m\]"
 	local CYAN="\[\033[0;36m\]"
