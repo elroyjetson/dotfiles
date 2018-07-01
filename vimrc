@@ -1,4 +1,4 @@
-"execute pathogen#infect()
+execute pathogen#infect()
 filetype on
 filetype plugin on
 filetype indent on
@@ -43,3 +43,4 @@ nnoremap <Leader>0 :10b<CR>
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
+inoremap jj <esc>
