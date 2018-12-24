@@ -11,10 +11,14 @@ syntax on
 
 set hidden
 set showmode
-set nu
+set nu rnu
 set ts=4 sts=4 sw=4 expandtab
 set scrolloff=8
 set wrapscan
+set showbreak=↳\  
+set cursorline
+
+hi CursorLine cterm=none ctermbg=0 ctermfg=10
 
 let mapleader = ","
 
@@ -44,3 +48,15 @@ nnoremap <Leader>0 :10b<CR>
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 inoremap jj <esc>
+
+for mapmode in ["n", "x", "o"]
+    exe mapmode . "noremap <expr> <Leader>0 ToggleNumberDisplay()"
+endfor
+
+function! ToggleNumberDisplay()
+    if exists('+relativenumber')
+        exe "setl" &l:nu ? "rnu" : &l:rnu ? "nornu" : "nu"
+    else
+        setl nu!
+    endif
+endfunction
