@@ -42,3 +42,6 @@ alias asp='/Users/jking/bin/capture_android_screenshot.sh'
 
 # get screen shot of a web site
 alias wsp="webkit2png --ignore-ssl-check"
+
+# download highest quality MP4 and M4A audio
+alias yt='youtube-dl -f '\''bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'\'''
