@@ -1,11 +1,14 @@
 LOCALBIN="$HOME/bin"
 #
-export PATH=$LOCALBIN:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:~/bin/pear/bin:$(brew --prefix coreutils)/libexec/gnubin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH
+export PATH=$LOCALBIN:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:~/bin/pear/bin:$(brew --prefix coreutils)/libexec/gnubin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH
 
 export EDITOR=vim
-
+unset HISTSIZE
+unset HISTFILESIZE
 export HISTCONTROL=ignoredups
 export HISTIGNORE="pwd:ls:ls -l:ls -la"
+shopt -s histappend
+PROMPT_COMMAND='history -a'
 
 set -o vi
 
